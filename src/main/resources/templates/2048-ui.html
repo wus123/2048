@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2048</title>
+    <link rel="stylesheet" type="text/css" href="styles/2048-style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="scripts/2048.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+        <div class="title-container">
+            <h1 class="title">2048</h1>
+            <h2 class="subtitle">Java Web API</h2>
+        </div>
+        <div class="score-container">SCORE <p class="game-score">0</p></div>
+
+        <a class="new-game-button"  onclick="newGame()" >New Game</a>
+    </div>
+
+    <div class="grid">
+        <div class="game-over-message">
+            <h1>Game Over</h1>
+        </div>
+        <div class="grid-row">
+            <div id="tile0" class="tile"></div>
+            <div id="tile1" class="tile"></div>
+            <div id="tile2" class="tile"></div>
+            <div id="tile3" class="tile"></div>
+        </div>
+        <div class="grid-row">
+            <div id="tile4" class="tile"></div>
+            <div id="tile5" class="tile"></div>
+            <div id="tile6" class="tile"></div>
+            <div id="tile7" class="tile"></div>
+        </div>
+        <div class="grid-row">
+            <div id="tile8" class="tile"></div>
+            <div id="tile9" class="tile"></div>
+            <div id="tile10" class="tile"></div>
+            <div id="tile11" class="tile"></div>
+        </div>
+        <div class="grid-row">
+            <div id="tile12" class="tile"></div>
+            <div id="tile13" class="tile"></div>
+            <div id="tile14" class="tile"></div>
+            <div id="tile15" class="tile"></div>
+        </div>
+    </div>
+
+    <div class="lower-container">
+        <div class="how-to-play">
+            <strong>HOW TO PLAY:</strong> Use <strong>arrow keys</strong> to move the tiles. Two tiles of the same number will <strong>merge into one!</strong>
+        </div>
+        <hr />
+        <div class="request-container">
+            Last Request:
+            <pre><code id="request">
+            </code></pre>
+        </div>
+        <div class="response-container">
+            Last JSON Response:
+            <pre><code id="response">                j
+            </code></pre>
+        </div>
+        <hr />
+        <div class="about-container">
+            <p>Created by <a href="http://alanrusnak.com">Alan Rusnak</a>. <a href="https://github.com/alanrusnak/2048-web-api">View source code on GitHub.</a></p>
+            <p>Inspired by <a href="https://gabrielecirulli.github.io/2048/">2048 by Gabriele Cirulli.</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
