@@ -1,0 +1,8 @@
+image: base-registry.tenxcloud.com/gitpod/workspace-full:latest
+ports:
+  - port: 8080
+vscode:
+  extensions:
+    - mtxr.sqltools@0.23.0:511bb5c64c3a902e2a4d33b5ef4929b4
+    - niko.vsc-mybatis@1.2.0:ecca122426241ab07e73e7c23dac25e7
+    - mtxr.sqltools-driver-mysql@0.2.0:097373c2d6a61001c1e2745d68d84f2b
